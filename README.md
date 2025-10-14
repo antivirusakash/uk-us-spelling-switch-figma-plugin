@@ -1,6 +1,8 @@
-# UK ↔ US Spelling Switch for Figma
-
 <div align="center">
+
+<img src="src/uk-us-logo.png" alt="UK ↔ US Spelling Switch Logo" width="200"/>
+
+# UK ↔ US Spelling Switch for Figma
 
 **Favourite** 🇬🇧 or **Favorite** 🇺🇸?
 **Colour** 🇬🇧 or **Color** 🇺🇸?
