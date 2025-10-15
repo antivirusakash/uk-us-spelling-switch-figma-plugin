@@ -33,6 +33,15 @@ Answer:
 The scripting permission is required to inject the content script and CSS styles into the active webpage to perform text highlighting. When a user clicks "Highlight UK English" or "Highlight US English", the extension needs to inject a content script that scans the page for spelling variations and inject CSS styles that apply visual highlighting. This permission is only used on the active tab when the user explicitly initiates a scan. The extension uses programmatic injection combined with activeTab, ensuring scripts only run when the user clicks the extension icon.
 ```
 
+#### Host Permissions (<all_urls>)
+
+Question: Why does your extension need host permissions for all URLs?
+
+Answer:
+```
+The extension requires host permissions for all URLs because users need to highlight UK or US spellings on any website they visit, including documentation sites, Google Docs, GitHub, content management systems, and blogs. The extension uses programmatic injection (chrome.scripting.executeScript) which requires host permissions to inject scripts. However, the extension only activates when the user explicitly clicks the extension icon and selects a scan mode. Scripts are never injected automatically. The extension does not collect, store, or transmit any data from any website. It only performs local text analysis and temporary visual highlighting when requested by the user.
+```
+
 #### Remote Code
 
 Question: Does your extension execute remote code?
