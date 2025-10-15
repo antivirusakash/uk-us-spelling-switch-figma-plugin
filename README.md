@@ -7,16 +7,18 @@
 ### 🎨 Figma Plugin + 🌐 Chrome Extension
 
 **Favourite** 🇬🇧 or **Favorite** 🇺🇸?
+
 **Colour** 🇬🇧 or **Color** 🇺🇸?
+
 **Organise** 🇬🇧 or **Organize** 🇺🇸?
 
 ---
 
 **One codebase. Two platforms. 449 word pairs.**
 
-✨ **Convert** UK ↔ US spellings in Figma designs
-✨ **Highlight** UK/US spellings on any webpage
-✨ **Share** the same dictionary across both platforms
+- ✨ **Convert** UK ↔ US spellings in Figma designs
+- ✨ **Highlight** UK/US spellings on any webpage
+- ✨ **Share** the same dictionary across both platforms
 
 <br>
 
@@ -45,22 +47,22 @@ Manually finding and replacing hundreds of spelling variations is tedious and er
 ## Features
 
 ### Shared Core (449 Word Pairs)
-✅ **Comprehensive Dictionary** - Covering contact centers, SaaS, AI, coaching, and business terminology
-✅ **Case Preserved** - Maintains lowercase, Title Case, and UPPERCASE
-✅ **Blazing Fast** - Optimized with regex caching and parallel processing (4-6x faster)
-✅ **100% Offline** - No network calls, no data collection
+- ✅ **Comprehensive Dictionary** - Covering contact centers, SaaS, AI, coaching, and business terminology
+- ✅ **Case Preserved** - Maintains lowercase, Title Case, and UPPERCASE
+- ✅ **Blazing Fast** - Optimized with regex caching and parallel processing (4-6x faster)
+- ✅ **100% Offline** - No network calls, no data collection
 
 ### Figma Plugin
-✅ **Smart Scanning** - Finds all UK or US spellings on your current page
-✅ **One-Click Replace** - Convert all matches instantly
-✅ **Font Safe** - Automatically loads fonts before editing
-✅ **Works Everywhere** - Compatible with Figma and FigJam
+- ✅ **Smart Scanning** - Finds all UK or US spellings on your current page
+- ✅ **One-Click Replace** - Convert all matches instantly
+- ✅ **Font Safe** - Automatically loads fonts before editing
+- ✅ **Works Everywhere** - Compatible with Figma and FigJam
 
 ### Chrome Extension
-✅ **Visual Highlighting** - Highlights UK or US spellings on any webpage
-✅ **Color-Coded** - Blue for UK English, Orange for US English
-✅ **Non-Destructive** - Just highlights, doesn't modify page content
-✅ **One-Click Clear** - Remove all highlights instantly
+- ✅ **Visual Highlighting** - Highlights UK or US spellings on any webpage
+- ✅ **Color-Coded** - Blue for UK English, Orange for US English
+- ✅ **Non-Destructive** - Just highlights, doesn't modify page content
+- ✅ **One-Click Clear** - Remove all highlights instantly
 
 ---
 
