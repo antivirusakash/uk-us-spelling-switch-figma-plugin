@@ -1,6 +1,6 @@
 {
   "name": "UK ↔ US Spelling Switch",
-  "id": "1559988372060927440",
+  "id": "1560186174058677118",
   "api": "1.0.0",
   "main": "dist/main.js",
   "ui": "dist/ui.html",
