@@ -16,9 +16,11 @@
 
 **One codebase. Two platforms. 449 word pairs.**
 
-- ✨ **Convert** UK ↔ US spellings in Figma designs
-- ✨ **Highlight** UK/US spellings on any webpage
-- ✨ **Share** the same dictionary across both platforms
+✨ **Convert** UK ↔ US spellings in Figma designs
+
+✨ **Highlight** UK/US spellings on any webpage
+
+✨ **Share** the same dictionary across both platforms
 
 <br>
 
