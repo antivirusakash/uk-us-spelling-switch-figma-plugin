@@ -14,7 +14,7 @@
 
 ---
 
-**One codebase. Two platforms. 449 word pairs.**
+**One codebase. Two platforms.**
 
 ✨ **Convert** UK ↔ US spellings in Figma designs
 

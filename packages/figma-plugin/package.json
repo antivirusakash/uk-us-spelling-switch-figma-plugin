@@ -4,8 +4,8 @@
   "description": "Figma plugin to switch between UK and US spellings",
   "main": "dist/main.js",
   "scripts": {
-    "build": "node copy-ui.js && esbuild src/main.ts --bundle --outfile=dist/main.js --target=es6 --external:@uk-us/core",
-    "watch": "node copy-ui.js && esbuild src/main.ts --bundle --outfile=dist/main.js --target=es6 --watch --external:@uk-us/core"
+    "build": "node copy-ui.js && esbuild src/main.ts --bundle --outfile=dist/main.js --target=es6",
+    "watch": "node copy-ui.js && esbuild src/main.ts --bundle --outfile=dist/main.js --target=es6 --watch"
   },
   "keywords": [
     "figma",

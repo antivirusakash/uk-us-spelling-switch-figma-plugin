@@ -18,21 +18,21 @@ let cachedUsToUkRegex: RegExp | null = null;
 // Get cached regex for target
 export function getRegex(target: Target): RegExp {
   if (target === "US") {
-    // To find US words, build regex from US words (keys of usToUk)
-    if (!cachedUsToUkRegex) {
-      cachedUsToUkRegex = buildRegex(usToUk);
-    }
-    return cachedUsToUkRegex;
-  } else {
-    // To find UK words, build regex from UK words (keys of ukToUs)
+    // To convert to US, find UK words (keys of ukToUs)
     if (!cachedUkToUsRegex) {
       cachedUkToUsRegex = buildRegex(ukToUs);
     }
     return cachedUkToUsRegex;
+  } else {
+    // To convert to UK, find US words (keys of usToUk)
+    if (!cachedUsToUkRegex) {
+      cachedUsToUkRegex = buildRegex(usToUk);
+    }
+    return cachedUsToUkRegex;
   }
 }
 
 // Get dictionary for target
 export function getDictionary(target: Target): Record<string, string> {
-  return target === "US" ? usToUk : ukToUs;
+  return target === "US" ? ukToUs : usToUk;
 }
