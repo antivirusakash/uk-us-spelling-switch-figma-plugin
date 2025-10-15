@@ -116,8 +116,10 @@ function highlightText(target: Target): { count: number; words: string[] } {
   clearHighlights();
   matchedWords.clear();
 
-  const regex = getRegex(target);
-  const dictionary = getDictionary(target);
+  // Highlighting UK spellings means scanning with the UK source dictionary (target 'US'), and vice versa
+  const detectionTarget: Target = target === "UK" ? "US" : "UK";
+  const regex = getRegex(detectionTarget);
+  const dictionary = getDictionary(detectionTarget);
   let matchCount = 0;
 
   // Handle form fields separately
