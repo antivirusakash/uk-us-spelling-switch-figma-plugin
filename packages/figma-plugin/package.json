@@ -1,0 +1,27 @@
+{
+  "name": "@uk-us/figma-plugin",
+  "version": "1.0.0",
+  "description": "Figma plugin to switch between UK and US spellings",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "node copy-ui.js && esbuild src/main.ts --bundle --outfile=dist/main.js --target=es6 --external:@uk-us/core",
+    "watch": "node copy-ui.js && esbuild src/main.ts --bundle --outfile=dist/main.js --target=es6 --watch --external:@uk-us/core"
+  },
+  "keywords": [
+    "figma",
+    "plugin",
+    "spelling",
+    "uk",
+    "us"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@uk-us/core": "file:../core"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.98.0",
+    "esbuild": "^0.19.0",
+    "typescript": "^5.2.0"
+  }
+}

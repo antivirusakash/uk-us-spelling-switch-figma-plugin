@@ -1,14 +1,22 @@
 {
   "name": "uk-us-spelling-switch",
   "version": "1.0.0",
-  "description": "Figma plugin to switch between UK and US spellings",
-  "main": "dist/main.js",
+  "description": "UK-US spelling conversion for Figma and Chrome",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "build": "node copy-ui.js && esbuild src/main.ts --bundle --outfile=dist/main.js --target=es6",
-    "watch": "node copy-ui.js && esbuild src/main.ts --bundle --outfile=dist/main.js --target=es6 --watch"
+    "build": "npm run build:core && npm run build:figma && npm run build:chrome",
+    "build:core": "npm run build --workspace=@uk-us/core",
+    "build:figma": "npm run build --workspace=@uk-us/figma-plugin",
+    "build:chrome": "npm run build --workspace=@uk-us/chrome-extension",
+    "watch:figma": "npm run watch --workspace=@uk-us/figma-plugin",
+    "watch:chrome": "npm run watch --workspace=@uk-us/chrome-extension"
   },
   "keywords": [
     "figma",
+    "chrome-extension",
     "plugin",
     "spelling",
     "uk",

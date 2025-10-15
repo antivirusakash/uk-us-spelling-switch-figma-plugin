@@ -1,0 +1,75 @@
+/* Highlight styles for UK-US spelling highlighter */
+
+/* Standard highlighting (for regular websites) */
+.uk-us-highlight {
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: 600;
+  cursor: help;
+  transition: all 0.2s ease;
+}
+
+.uk-us-highlight-uk {
+  background-color: rgba(0, 123, 255, 0.25);
+  border-bottom: 2px solid rgba(0, 123, 255, 0.8);
+}
+
+.uk-us-highlight-uk:hover {
+  background-color: rgba(0, 123, 255, 0.4);
+}
+
+.uk-us-highlight-us {
+  background-color: rgba(255, 149, 0, 0.25);
+  border-bottom: 2px solid rgba(255, 149, 0, 0.8);
+}
+
+.uk-us-highlight-us:hover {
+  background-color: rgba(255, 149, 0, 0.4);
+}
+
+/* Safe highlighting (for Google apps - non-destructive) */
+.uk-us-safe-highlight {
+  position: relative;
+  cursor: help;
+}
+
+.uk-us-safe-highlight[data-uk-us-target="uk"]::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: rgba(0, 123, 255, 0.8);
+  pointer-events: none;
+}
+
+.uk-us-safe-highlight[data-uk-us-target="us"]::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: rgba(255, 149, 0, 0.8);
+  pointer-events: none;
+}
+
+.uk-us-safe-highlight[data-uk-us-target="uk"]:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+}
+
+.uk-us-safe-highlight[data-uk-us-target="us"]:hover {
+  background-color: rgba(255, 149, 0, 0.1);
+}
+
+/* Form field indicators */
+.uk-us-form-field-uk {
+  border: 2px solid rgba(0, 123, 255, 0.5) !important;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3) !important;
+}
+
+.uk-us-form-field-us {
+  border: 2px solid rgba(255, 149, 0, 0.5) !important;
+  box-shadow: 0 0 5px rgba(255, 149, 0, 0.3) !important;
+}

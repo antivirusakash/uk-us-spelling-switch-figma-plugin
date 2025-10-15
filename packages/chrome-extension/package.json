@@ -1,0 +1,28 @@
+{
+  "name": "@uk-us/chrome-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension to highlight UK and US spellings",
+  "scripts": {
+    "build": "npm run build:popup && npm run build:content && npm run copy-assets",
+    "build:popup": "esbuild src/popup.ts --bundle --outfile=dist/popup.js --target=es2020",
+    "build:content": "esbuild src/content.ts --bundle --outfile=dist/content.js --target=es2020",
+    "copy-assets": "mkdir -p dist && cp src/popup.html dist/popup.html && cp ../ui-shared/styles.css dist/styles.css && cp src/highlight.css dist/highlight.css && cp manifest.json dist/manifest.json && mkdir -p dist/icons && cp icons/*.png dist/icons/ 2>/dev/null || true",
+    "watch": "npm run build:popup -- --watch & npm run build:content -- --watch"
+  },
+  "keywords": [
+    "chrome-extension",
+    "spelling",
+    "uk",
+    "us"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@uk-us/core": "file:../core"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.251",
+    "esbuild": "^0.19.0",
+    "typescript": "^5.2.0"
+  }
+}

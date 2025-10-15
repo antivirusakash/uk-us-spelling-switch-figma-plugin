@@ -1,0 +1,22 @@
+{
+  "name": "@uk-us/core",
+  "version": "1.0.0",
+  "description": "Core UK-US spelling conversion logic",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "spelling",
+    "uk",
+    "us",
+    "dictionary"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.0"
+  }
+}
