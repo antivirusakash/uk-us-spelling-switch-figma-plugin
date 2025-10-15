@@ -136,7 +136,6 @@ export const ukToUs: Record<string, string> = {
   // Miscellaneous common words
   mould: "mold",
   aluminium: "aluminum",
-  tyre: "tire",
   programme: "program",
   grey: "gray",
 
