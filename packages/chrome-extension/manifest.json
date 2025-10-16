@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "UK ↔ US Spelling Highlighter",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Highlight UK or US spelling variations on any webpage",
   "permissions": [
     "activeTab",
